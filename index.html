@@ -10,33 +10,89 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="grid-container" uk-grid>
       <div class="half-container uk-width-1-2">
-        <h1>Tu practica medica, donde tu quieras</h1>
-        <p>Quieres dar consulta, pero no tienes consultorio?</p>
-        <p>Quieres tener mas pacientes?</p>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="section1">
+          <div class="circle-image">
+            <img src="./images/medical-app-circle.svg" alt="">
+          </div>
+          <div class="header">
+            <h1>Tu practica medica, donde tu quieras</h1>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="problem">
+            <p>Quieres dar consulta, pero no tienes consultorio?</p>
+            <div class="circle-image">
+              <img src="./images/doctor-office-circle.svg" alt="">
+            </div>
+          </div>
+          <div class="problem">
+            <p>Quieres tener mas pacientes?</p>
+            <div class="circle-image">
+              <img src="./images/patients-circle.svg" alt="">
+            </div>
+          </div>
+          <div class="problem">
+            <p>Balancear tu horario con tu consulta privada</p>
+            <div class="circle-image">
+              <img src="./images/doctor-circle.svg" alt="">
+            </div>
+          </div>
+        </div>
+        
       </div>
       <div class="half-container uk-width-1-2">
-        <form action="">
-          <fieldset class="uk-fieldset">
-            <legend class="uk-legend">
-              <h2>Te gustaria conocer como?</h2>
-            </legend>
-            <input
-              class="uk-input"
-              type="text"
-              placeholder="Ingresa tu e-mail"
-            />
-            <div class="uk-margin">
-              <button class="uk-button uk-button-primary">
-                Quiero saber mas!
-              </button>
+        <div class="card-header">
+          <p>Queremos cambiar el paradigma de la consulta medica.<br>Si estas interesado en tener:</p>
+        </div>
+        <div class="section3">
+          <div class="card-wrapper">
+            <div class="uk-card uk-card-default uk-card-body">
+              <div class="circle-image">
+                <img src="./images/digital-hospital-circle.svg" alt="">
+              </div>
+              <p>Un consultorio listo, siempre que tengas paciente</p>
             </div>
-          </fieldset>
-        </form>
+          </div>
+          <div class="card-wrapper">
+            <div class="uk-card uk-card-default uk-card-body">
+              <div class="circle-image">
+                <img src="./images/digital-tools.svg" alt="">
+              </div>
+              <p>Herramientas para administrar tus consultas</p>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <div class="uk-card uk-card-default uk-card-body">
+              <div class="uk-card-title circle-image">
+                <img src="./images/investment-circle.svg" alt="">
+              </div>
+              <p>Empezar tu practica con minima inversion</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <h2>Lo podemos lograr</h2>
+        <div class="form">
+          <form action="">
+            <fieldset class="uk-fieldset">
+              <input
+                class="uk-input"
+                type="text"
+                placeholder="Ingresa tu e-mail"
+              />
+            </fieldset>
+            <div class="uk-margin">
+              <button class="uk-button uk-button-primary">Quiero mas informacion!</button>
+            </div>
+          </form>
+        </div>
+            
+      </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
