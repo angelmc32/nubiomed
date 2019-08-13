@@ -27,6 +27,21 @@ function submitForm(e) {
 
   // Save email
   saveEmail(email);
+
+  // Show alert
+  document.querySelector('.alert').style.display = "block";
+  document.querySelector('#header-text').style.display = "none";
+
+  // Hide alert after 3 seconds
+  setTimeout( function() {
+    document.querySelector('.alert').style.display = "none";
+    document.querySelector('#header-text').style.display = "block";
+    document.getElementById("submit-button").style.backgroundColor = "#992825";
+  }, 3000);
+
+  // Clear form and submit button
+  document.getElementById("email-form").reset();
+  document.getElementById("submit-button").style.backgroundColor = "#298f65";
 }
 
 // Function to get form values

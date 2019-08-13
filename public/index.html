@@ -29,7 +29,8 @@
       </div>
     </nav>
     <header>
-      <h1>Tu práctica médica, donde tú quieras</h1>
+      <h1 id="header-text" display="block">Tu práctica médica, donde tú quieras</h1>
+      <div class="alert"><p>Hemos recibido tu correo, ¡pronto escucharás de nosotros!</p></div>
     </header>
     <main>
       <div class="section1">
@@ -61,7 +62,7 @@
           <h2>¿Quieres saber cómo?</h2>
           <div class="form">
             <form action="" id="email-form">
-              <input class="uk-input" id="email-input" type="text" placeholder="Ingresa tu e-mail"/>
+              <input class="uk-input" id="email-input" type="email" placeholder="Ingresa tu e-mail" required/>
               <div class="uk-margin">
                 <button class="uk-button uk-button-primary" id="submit-button" type="submit">Quiero más información</button>
               </div>
@@ -70,7 +71,7 @@
         </div>
       </div>
     </main>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     <script src="index.js"></script>
   </body>
